@@ -1,0 +1,130 @@
+@charset "utf-8";
+@import "common.css";
+
+
+/*----------------------------------------------------
+index
+----------------------------------------------------*/
+
+body {
+  background: #fff;
+  font-family: 'Noto Sans JP', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: 100%;
+  text-align: center;
+  width: 100%;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.fix1 {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  font-size: 5.8em;
+  color: #fff;
+  font-weight: 400;
+}
+
+.fix2 {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 355px;
+}
+
+.fix3 {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 120px;
+  margin: 0 auto;
+  width: 930px;
+}
+
+.fix5 {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 240px;
+  margin: 0 auto;
+  width: 930px;
+}
+
+.fix6 {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 1000px;
+  margin: 0 auto;
+  width: 930px;
+}
+
+.fix3 img {
+  width: 930px;
+}
+
+.fix3 {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 200px;
+  margin: 0 auto;
+  width: 930px;
+}
+
+.fix3 img {
+  width: 100%;
+}
+
+.fix3_4 {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 250px;
+  margin: 0 auto;
+  width: 930px;
+}
+
+.fix3_4 img {
+  width: 100%;
+}
+
+.fix3_5 {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 30px;
+  margin: 0 auto;
+  width: 930px;
+}
+
+.fix3_5 img {
+  width: 100%;
+}
+
+.fix3_6 {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 30px;
+  margin: 0 auto;
+  width: 492px;
+}
+
+.fix3_6 img {
+  width: 100%;
+}
+
+footer p{
+  padding-top: 5%;
+  font-size: 1.2em;
+  font-weight: 400;
+}

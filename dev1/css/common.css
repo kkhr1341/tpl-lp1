@@ -1,0 +1,428 @@
+@charset "utf-8";
+
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+header,
+footer,
+nav,
+aside,
+small,
+abbr,
+address,
+code,
+del,
+img,
+ins,
+kbd,
+q,
+samp,
+strong,
+sub,
+sup,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+dialog,
+figure,
+menu,
+section,
+time,
+mark,
+object,
+audio,
+video {
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+img {
+  border: none;
+  vertical-align: bottom;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  color: #474747;
+  outline: none;
+  text-decoration: none;
+}
+
+em {
+  font-style: normal;
+}
+
+/*----------------------------------------------------
+img(画像エフェクト)
+----------------------------------------------------*/
+
+a img {
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+a:hover img {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+
+button img {
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+button:hover img {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+
+img.fade:hover {
+  opacity: .8;
+}
+
+.rotate img {
+  transition: 0.2s;
+}
+
+.rotate img:hover {
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  transform: rotate(3deg);
+}
+
+/*----------------------------------------------------
+block (PC＆SP書き分け)
+----------------------------------------------------*/
+
+/* PC時"pc"のclassがついた要素を表示 */
+
+.pc {
+  display: block !important;
+}
+
+.sp {
+  display: none !important;
+}
+
+/* SP時"sp"のclassがついた要素を表示 */
+
+@media only screen and (max-width: 1000px) {
+  .pc {
+    display: none !important;
+  }
+  .sp {
+    display: block !important;
+  }
+}
+
+/*----------------------------------------------------
+.common (汎用)
+----------------------------------------------------*/
+
+.clear {
+  clear: both;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+.mb0 {
+  margin-bottom: 0 !important;
+}
+
+.mb5 {
+  margin-bottom: 5px !important;
+}
+
+.mb20 {
+  margin-bottom: 20px !important;
+}
+
+
+.mb30 {
+  margin-bottom: 30px !important;
+}
+
+.pb50 {
+  padding-bottom: 50px !important;
+}
+
+.pb30 {
+  padding-bottom: 30px !important;
+}
+
+.pt0 {
+  padding-top: 0 !important;
+}
+
+.pt10 {
+  padding-top: 10px !important;
+}
+
+.pt50 {
+  padding-top: 50px !important;
+}
+
+.pt100 {
+  padding-top: 100px !important;
+}
+
+.pt3em {
+  padding-top: 3em !important;
+}
+
+.tac {
+  text-align: center !important;
+}
+
+.relative {
+  position: relative;
+}
+
+.youtube {
+  position: relative;
+  width: 94%;
+  padding-top: 56.25%;
+}
+
+.youtube iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 94% !important;
+  height: 100% !important;
+}
+
+/* 点滅 */
+
+.blinking {
+  -webkit-animation: blink .7s ease-in-out infinite alternate;
+  -moz-animation: blink .7s ease-in-out infinite alternate;
+  animation: blink .7s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* フワフワアニメーション */
+
+.fuwafuwa {
+  -webkit-animation-name: fuwafuwa;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  /*-webkit-animation-direction:alternate;*/
+  -webkit-animation-timing-function: ease;
+
+  -moz-animation-name: fuwafuwa;
+  -moz-animation-duration: 1.5s;
+  -moz-animation-iteration-count: infinite;
+  /*-moz-animation-direction:alternate;*/
+  -moz-animation-timing-function: ease;
+}
+
+@-webkit-keyframes fuwafuwa {
+  0% {
+    -webkit-transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(0, -10px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+  }
+}
+
+@-moz-keyframes fuwafuwa {
+  0% {
+    -moz-transform: translate(0, 0);
+  }
+  50% {
+    -moz-transform: translate(0, -10px);
+  }
+  100% {
+    -moz-transform: translate(0, 0);
+  }
+}
+
+/*----------------------------------------------------
+form (フォームリセット)
+----------------------------------------------------*/
+
+select {
+  outline: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  background: none transparent;
+  vertical-align: middle;
+  font-size: inherit;
+  color: inherit;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+}
+
+select option {
+  background-color: #fff;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #828c9a;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+}
+
+input[type="submit"] {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input[type="date"] {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* Google Chrome, Safari, Opera 15+, Android, iOS */
+
+::-webkit-input-placeholder {
+  color: #a8a8a8;
+  font-size: .7em;
+}
+
+.fix6 ::-webkit-input-placeholder {
+  color: #a8a8a8;
+  font-size: .8em;
+}
+
+/* Firefox 18- */
+
+:-moz-placeholder {
+  color: #a8a8a8;
+  font-size: .7em;
+  opacity: 1;
+}
+
+.fix6 :-moz-placeholder {
+  color: #a8a8a8;
+  font-size: .8em;
+  opacity: 1;
+}
+
+/* Firefox 19+ */
+
+::-moz-placeholder {
+  color: #a8a8a8;
+  font-size: .7em;
+  opacity: 1;
+}
+
+/* IE 10+ */
+
+:-ms-input-placeholder {
+  color: #a8a8a8;
+  font-size: .7em;
+}

@@ -7,42 +7,214 @@
 html {
   font-size: 10px;
 }
-.top_heading {
-  width: 100%;
-  height: 3.5rem;
-  background-color: #000;
+a {
+  text-decoration: none;
+  text-decoration-color: unset;
 }
-.top_heading p {
+.w_lm {
+  max-width: 1440px;
+  min-width: 1024px;
+}
+.line_btn {
+  text-decoration: none;
+  text-align: center;
+  width: 40rem;
+  border-radius: 3rem;
   color: #fff;
-  font-size: 1.6rem;
+  background-color: #00c300;
+  position: relative;
+  place-self: center;
+  height: 12rem;
+  box-shadow: 0 0.5rem 0.1rem #666;
+  transition: ease 0.25s;
+  transform: translateY(-0.5rem);
+}
+.line_btn:hover {
+  background-color: #00e000;
+}
+.line_btn:active {
+  background-color: #00b300;
+  box-shadow: 0 0.2rem 0 #000;
+  transform: translateY(0);
+}
+.line_btn p {
+  font-size: 2rem;
+}
+.line_btn div {
+  height: 100%;
+  display: grid;
+  margin: auto;
+  grid-template-columns: auto auto;
+  width: 90%;
+  place-items: center;
+}
+.line_btn div img {
+  height: 8rem;
+  margin: auto 0;
+}
+header {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr auto 1fr;
+  background-color: #242;
+  place-items: center;
+  padding: 1rem 0;
+}
+.top_h1 {
+  grid-column: 2/3;
+  width: 100%;
+  height: 3.2rem;
+}
+.top_h1 h1 {
+  color: #fff;
+  font-size: 2.8rem;
   letter-spacing: -0.1rem;
   text-align: center;
   font-weight: bold;
-  line-height: 3.5rem;
 }
-.top_heading p .dot {
+.top_h1 h1 .dot {
   padding-top: 0.4em;
   background-position: top left -2px;
   background-repeat: repeat-x;
   background-size: 1em 0.3em;
   background-image: radial-gradient(0.1em 0.1em at center center, #ff0, #ff0 100%, transparent);
 }
-.top_heading{
+.top_h1 {
   position: relative;
 }
 
-.top_heading p::before,
-.top_heading p::after{
+.top_h1 h1::before,
+.top_h1 h1::after {
   content: "";
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 1px;
+
+  width: 2px;
   background-color: #fff;
 }
-.top_heading p::before{
-  transform: translateX(-5px) scaley(0.5) rotate(-10deg);
+.top_h1 h1::before {
+  transform: translate(-20px, 7px) scalex(1.5) rotate(-10deg);
 }
-.top_heading p::after{
-  transform: translateX(5px) scaley(0.5) rotate(10deg);
+.top_h1 h1::after {
+  transform: translate(20px, 7px) scalex(1.5) rotate(10deg);
+}
+.cl_sec01_cnt01 {
+  padding: 5rem 0;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.cl_sec01_cnt01 img {
+  margin: auto;
+  width: 50%;
+  max-width: 1440px;
+  min-width: 1024px;
+}
+.cl_sec02 {
+  display: grid;
+  background-color: #adf;
+  margin: auto;
+  width: 100%;
+  padding: 5rem 0;
+}
+.cl_sec02_cnt01 {
+  background-color: #adf;
+  color: #000;
+  margin: auto;
+  padding-bottom: 5rem;
+  width: 100%;
+}
+.cl_sec02_cnt01 h2 {
+  font-size: 5rem;
+  text-align: center;
+  font-style: oblique;
+}
+.cl_sec02_cnt01 h2 span {
+  text-decoration: underline;
+}
+.c_g {
+  color: #262;
+}
+.c_br {
+  color: #663;
+}
+.c_r {
+  color: #f44;
+}
+.c_y {
+  color: #882;
+}
+.cl_sec02_cnt02 {
+  padding: 5rem 0;
+}
+.cl_sec02_cnt02 h3 {
+  font-size: 3.5rem;
+  text-align: center;
+  padding: 5rem 0;
+  text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff;
+}
+.cl_sec02_cnt02 li {
+  list-style: none;
+  padding: 2rem 0;
+  background: #242;
+  color: #fff;
+  margin: 1rem auto;
+  font-weight: bold;
+  font-size: 2.5rem;
+  width: 25em;
+  text-indent: 1em;
+}
+.cl_sec02_cnt02 li span {
+  color: #ff0;
+}
+.cl_sec03 {
+  padding: 7rem 0;
+  text-align: center;
+}
+.cl_sec03 a {
+  color: #000;
+  text-decoration: underline #666;
+}
+.cl_sec03 h3 {
+  font-size: 8rem;
+}
+.cl_sec04 {
+  display: grid;
+  background-color: #adf;
+  margin: auto;
+  width: 100%;
+  padding: 5rem 0;
+}
+.cl_sec04 h2 {
+  font-size: 5rem;
+  text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff;
+  text-align: center;
+}
+.cl_sec04_cnt01 {
+  padding: 5rem 0;
+}
+.cl_sec04_cnt01 h3 {
+  font-size: 3.5rem;
+  text-align: center;
+  padding: 5rem 0;
+  text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff;
+}
+.cl_sec04_cnt01 li {
+  list-style: none;
+  padding: 2rem 0;
+  background: #242;
+  color: #fff;
+  margin: 1rem auto;
+  font-weight: bold;
+  font-size: 2.5rem;
+  width: 25em;
+  text-indent: 1em;
+}
+.cl_sec04_cnt01 li span {
+  color: #6af;
+}
+.cl_sec04_cnt01 p {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
 }

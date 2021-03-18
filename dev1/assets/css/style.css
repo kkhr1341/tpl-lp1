@@ -348,6 +348,9 @@ header {
     max-width: 1440px;
     min-width: 320px;
   }
+  .cl_sec01_cnt01 img {
+    width: 100%;
+  }
   .cl_sec03_cnt01 h3 {
     font-size: 3rem;
   }

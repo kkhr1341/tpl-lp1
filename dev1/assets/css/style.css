@@ -345,9 +345,9 @@ header {
   }
 }
 .js-scroll {
-  opacity: 0;
+  opacity: 0.5;
   transition: all 0.5s;
-  transform: scale(1.05);
+  transform: scale(1.025);
 }
 .js-scroll-in {
   opacity: 1;
@@ -355,7 +355,7 @@ header {
 }
 .js-scroll-blur {
   opacity: 0;
-  transition: all 1s;
+  transition: all 0.5s;
   -webkit-filter: blur(5px);
   filter: blur(5px);
   transform: translate(180px, 0);

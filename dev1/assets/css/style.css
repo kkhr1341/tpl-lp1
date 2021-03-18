@@ -7,15 +7,15 @@
 }
 html {
   font-size: 10px;
-  overflow-x: hidden;
 }
 body {
+  width: 100vw;
+  overflow-x: hidden;
   overflow-y: scroll;
-  -ms-overflow-style: none; /* IE, Edge 対応 */
-  scrollbar-width: none; /* Firefox 対応 */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 body::-webkit-scrollbar {
-  /* Chrome, Safari 対応 */
   display: none;
 }
 a {
@@ -127,10 +127,36 @@ header {
   padding: 5rem 0;
   display: grid;
   grid-template-columns: 1fr;
+  position: relative;
 }
 .cl_sec01_cnt01 img {
   margin: auto;
+  max-height: calc(100vh - 24rem);
   width: 50%;
+}
+.cl_sec01_cnt01::before {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 80%;
+  background-color: #242;
+  transform-origin: 100% 100%;
+  height: 500px;
+  width: 500px;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+.cl_sec01_cnt01::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 80%;
+  background-color: #adf;
+  height: 500px;
+  width: 500px;
+  transform-origin: 0 0;
+  transform: rotate(45deg);
+  z-index: -1;
 }
 .cl_sec02 {
   display: grid;
@@ -320,7 +346,7 @@ header {
   }
   .w_lm {
     max-width: 1440px;
-    min-width: 375px;
+    min-width: 320px;
   }
   .cl_sec03_cnt01 h3 {
     font-size: 3rem;
@@ -339,7 +365,7 @@ header {
   }
   .cl_sec03_cnt01 li {
     max-width: 25em;
-    min-width: 375px;
+    min-width: 320px;
     width: 100%;
   }
   .cl_sec06 > p {

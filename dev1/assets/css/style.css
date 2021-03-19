@@ -216,7 +216,7 @@ header {
   font-size: 3rem;
   text-align: center;
 }
-.cl_sec02_cnt02 h2 span {
+.cl_sec02_cnt02 h2 .c_re {
   color: #f00;
 }
 .cl_sec02_cnt02 ul {
@@ -352,6 +352,9 @@ header {
   color: #00b300;
 }
 
+span.br {
+  display: inline-block;
+}
 @media screen and (max-width: 1439px) {
   header {
     grid-template-columns: auto;
